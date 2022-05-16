@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#a4a6ac] p-6">
+
+<section class="bg-slate-200 rounded-2xl flex">
+    <section class="left bg-[#f6f6f7] p-4 rounded-l-2xl pr-8 pb-8">
+        <div class="search flex bg-white p-2 px-6 items-center gap-2 rounded-full">
+            <i class="fa-solid fa-magnifying-glass opacity-70"></i>
+            <input type="text" placeholder="Search fot places" class="h-full p-1 outline-none">
+            <i class="fa-solid fa-xmark opacity-70 bg-red-300  w-6 h-6 justify-center flex items-center rounded-full cursor-pointer hover:bg-red-500 "></i>
+        </div>
+        <div class="flex items-center justify-center pt-24">
+            <i class="fa-solid fa-cloud-sun text-[150px] text-yellow-500"></i>
+        </div>
+        <div class="temp pl-6">
+            <p class="text-3xl font-normal">12&deg; C</p>
+            <span class="day font-normal text-lg text-gray-700">Monday, <span class="time opacity-70">16:00</span></span>
+        </div>
+        <div class="pl-6 pt-5">
+            <div class="">
+                <i class="fa-solid fa-cloud w-7 h-7"></i>
+                <span class="text-sm">Mostly cloud</span>
+            </div>
+            <div class="">
+                <i class="fa-solid fa-cloud-rain w-7 h-7"></i>
+                <span class="text-sm">Rain - 30%</span>
+            </div>
+        </div>
+
+        <div class="img flex items-center justify-center h-[120px] relative">
+            <img class="w-full h-full object-cover rounded-2xl" src="img/city.webp" alt="city"/>
+            <div class="city bg-gradient-to-tr from-gray-600 to-slate-500 opacity-80 absolute w-full h-full rounded-2xl">
+                
+            </div>
+            <p class="font-normal text-lg absolute top-[30%]">New York, USA</p>
+        </div>
+    </section>
+    <section class="right p-4 w-full">
+        <div class="top_nav flex justify-between w-full items-center pr-8">
+            <div class="">
+                <span class="font-medium border-b-2 opacity-60 p-1 m-1">Today</span>
+                <span class="font-medium border-b-2 border-gray-600 p-1 m-1">Week</span>
+            </div>
+            <div class="flex gap-5 items-center">
+                <div class=" flex gap-1 items-center">
+                    <div class="p-2 rounded-full w-[40px] h-[40px] text-lg flex items-center justify-center bg-slate-600 text-white cursor-pointer shadow-md">&deg;C</div>
+                    <div class="p-2 rounded-full w-[40px] h-[40px] text-lg flex items-center justify-center bg-white shadow-md cursor-pointer">&deg;F</div>
+                </div>
+                <div class="img w-12 h-12 cursor-pointer hover:brightness-75 transition duration-300 ease-in">
+                    <img class="w-full h-full object-cover rounded-full" src="img/teen.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-3 flex-wrap">
+            
+        </div>
+    </section>
+</section>
+    
+</body>
+</html>
